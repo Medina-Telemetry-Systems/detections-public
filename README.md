@@ -1,6 +1,9 @@
-# Medina Telemetry Systems: Public Detections
+<img alt="Public Detections: free sample rules and advisories from Medina Telemetry Systems" src="assets/banner.png" width="100%">
 
-Free sample detection rules and vulnerability advisories from **Medina Telemetry Systems**.
+
+# Public Detections
+
+Free sample detection rules and vulnerability advisories from **[Medina Telemetry Systems](https://github.com/Medina-Telemetry-Systems)**.
 
 This repository is a **public sample** of our daily detection feed. Every rule here is the real thing: the same rule, the
 same documentation and the same test evidence our subscribers receive. It is published on a delay, as a sample.
@@ -21,11 +24,11 @@ same documentation and the same test evidence our subscribers receive. It is pub
 
 | | This public repo | Subscription *(opening soon)* |
 |---|---|---|
-| Advisories | ✔ same day | ✔ same day |
+| Advisories | Same day | Same day |
 | Rules | A hand-picked sample, about **30 days** after release | **Every** rule, the **morning** it is written |
-| Rule cards and test evidence | ✔ for published samples | ✔ for every rule |
+| Rule cards and test evidence | For published samples | For every rule |
 | Formats | Sample formats | Sigma, Suricata and YARA, with Sigma conversions for Splunk, Microsoft Sentinel and Elastic |
-| Support and tuning for your environment | — | Available |
+| Support and tuning for your environment | Not included | Available |
 
 Subscriptions are opening soon. **Watch** or **star** this repository to hear first.
 
