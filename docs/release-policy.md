@@ -4,7 +4,15 @@
 |---|---|---|
 | **Advisories** | Same day | Same day. We publish advisories immediately because they help everyone patch. |
 | **Rules** | Every rule, the morning it is written | A hand-picked sample, normally about **30 days** later |
-| **Launch exception** | | The first sample rule (CVE-2026-123966) was published at launch to show what a full rule card looks like |
+| **Launch exception** | | The first samples (CVE-2026-123966, Suricata, and CVE-2026-118066, Sigma) were published at launch to show what full rule cards look like |
+
+## Monthly public drops
+
+Public samples are published once a month as a **GitHub Release** named for the month, for example "November 2026 public drop".
+The release notes list each new sample and advisory. To be notified, choose **Watch → Custom → Releases** on this repository.
+
+The full list of everything released to subscribers, with public samples linked, is in
+[SUBSCRIBER-RELEASES.md](../SUBSCRIBER-RELEASES.md).
 
 ## How rules are chosen for the public sample
 
