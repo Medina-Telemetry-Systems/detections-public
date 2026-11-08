@@ -1,7 +1,7 @@
 # How we test
 
 A rule can pass every syntax check and still **detect nothing**, or fire all day on normal traffic. Our process is built
-to catch both problems before a rule reaches anyone.
+to catch both problems before a rule is published.
 
 ## 1. A rule needs concrete evidence
 
@@ -44,9 +44,13 @@ fails any check is **quarantined** and never released.
 Test samples contain only what is needed to trigger the detection, such as padding characters, marker strings or
 ordinary requests. They never contain working exploit code, shellcode or malware.
 
-## 5. Every rule is reviewed by a person
+## 5. AI-assisted drafting, human review
 
-Before release, a person reviews each rule card:
+Rules, cards and advisories are drafted with the help of an AI assistant (Anthropic's Claude), working from the sources
+cited in each card. The AI's draft is not trusted on its own: every rule must pass the automated checks above, and a
+person reviews it before it is published.
+
+Before publication, the reviewer checks each rule card:
 
 - Does the source really say what the card quotes?
 - Is the rule aimed at the harmful part of the attack?
@@ -55,8 +59,9 @@ Before release, a person reviews each rule card:
 
 ## 6. Lab proof
 
-Rules start as `experimental`. They're promoted to `test` once they have been proven in our lab against the real
-vulnerable software or realistic traffic. The lab uses Suricata and Wazuh on an isolated network.
+Rules start as `experimental`. They're promoted to `test` once they have been proven in a lab against the real
+vulnerable software or realistic traffic. The lab, an isolated network with Suricata and Wazuh, is being built. Until
+it is in use, every rule here is `experimental`.
 
 ## Severity
 

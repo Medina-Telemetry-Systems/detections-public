@@ -1,66 +1,51 @@
-<img alt="Public Detections: free sample rules and advisories from Medina Telemetry Systems" src="assets/banner.png" width="100%">
+<img alt="Public Detections: detection rules and advisories from Medina Telemetry Systems" src="assets/banner.png" width="100%">
 
 
 # Public Detections
 
-Free sample detection rules and vulnerability advisories from **[Medina Telemetry Systems](https://github.com/Medina-Telemetry-Systems)**.
+Detection rules and vulnerability advisories for newly disclosed and actively exploited vulnerabilities, from
+**[Medina Telemetry Systems](https://github.com/Medina-Telemetry-Systems)**.
 
-This repository is a **public sample** of our daily detection feed. Every rule here is the real thing: the same rule, the
-same documentation and the same test evidence our subscribers receive. It is published on a delay, as a sample.
+Every rule here comes with its rationale, the source evidence it is based on, false-positive notes, and test evidence
+showing it fires on the attack and stays silent on normal activity. When the public information isn't concrete enough
+for a reliable rule, we publish an advisory instead of guessing.
 
-## Recently released to subscribers
+## Index
 
 <!-- feed:start -->
-| Released | CVE | Issue | Formats | Severity | Status | Access |
+**2 rules** and **3 advisories**, newest first.
+
+| Date | CVE | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
-| 2026-11-08 | CVE-2026-124058 | TOTOLINK CA300-PoE buffer overflow via an oversized "ApCliKeyStr" repeater password | Suricata | CVSS 3.1: 9.1 Critical | experimental | Subscribers |
-| 2026-11-08 | CVE-2026-124057 | TOTOLINK CA300-PoE buffer overflow via an oversized "Key1Str1" Wi-Fi key | Suricata | CVSS 3.1: 9.1 Critical | experimental | Subscribers |
 | 2026-11-08 | CVE-2026-123614 | imgproxy heap overflow from an ICO image that lies about its size | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-123614.md) |
 | 2026-11-08 | CVE-2026-122041 | Checkout Field Editor for WooCommerce (Pro) lets anyone delete site media files | Advisory | CVSS 3.1: 9.1 Critical | advisory | [advisory](advisories/cve-2026-122041.md) |
-| 2026-11-07 | CVE-2026-71495 | Wanderer trail app lets anyone make the server fetch internal addresses (SSRF) | Suricata | CVSS 3.1: 10.0 Critical | experimental | Subscribers |
 | 2026-11-07 | CVE-2026-19868 | SonicWall SSL-VPN lets some users skip SAML login and MFA | Advisory | CVSS 3.1: 7.5 High | advisory | [advisory](advisories/cve-2026-19868.md) |
-| 2026-11-07 | CVE-2026-123966 | Tenda AC19 router heap overflow via an oversized "deviceId" in parental controls | Suricata | CVSS 3.1: 10.0 Critical | experimental | [sample](cards/cve-2026-123966.md) |
-| 2026-11-07 | CVE-2026-123958 | TOTOLINK CA300-PoE buffer overflow via oversized LAN DNS or language settings | Suricata | CVSS 3.1: 9.9 Critical | experimental | Subscribers |
-| 2026-11-07 | CVE-2026-123957 | TOTOLINK CA300-PoE buffer overflow via an oversized "ipStart" setting | Suricata | CVSS 3.1: 9.9 Critical | experimental | Subscribers |
-| 2026-11-07 | CVE-2026-118066 | LatePoint WordPress booking plugin account takeover with "IS NOT NULL" | Sigma | CVSS 3.1: 9.1 Critical | experimental | [sample](cards/cve-2026-118066.md) |
-
-Full list: [SUBSCRIBER-RELEASES.md](SUBSCRIBER-RELEASES.md)
+| 2026-11-07 | CVE-2026-123966 | Tenda AC19 router heap overflow via an oversized "deviceId" in parental controls | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-123966.md) |
+| 2026-11-07 | CVE-2026-118066 | LatePoint WordPress booking plugin account takeover with "IS NOT NULL" | Sigma | CVSS 3.1: 9.1 Critical | experimental | [card](cards/cve-2026-118066.md) |
 <!-- feed:end -->
 
 ## What's inside
 
 | Folder | Contents |
 |---|---|
-| [`advisories/`](advisories/) | Plain-English advisories for important vulnerabilities, especially ones that are actively exploited but have no published technical details yet. Published **immediately**. |
+| [`advisories/`](advisories/) | Plain-English advisories for important vulnerabilities, especially ones that are actively exploited but have no published technical details yet |
 | [`rules/`](rules/) | Detection rules: `sigma/`, `suricata/`, `yara/` |
 | [`cards/`](cards/) | One **rule card** per vulnerability: what the rule detects and why, the quoted source evidence, false-positive notes, test results, ATT&CK mapping, and what is still uncertain |
 | [`tests/`](tests/) | The harmless test samples each rule was proven against (`match*` must alert, `nomatch*` must stay silent) |
-| [`docs/`](docs/) | [How we test](docs/how-we-test.md) and our [release policy](docs/release-policy.md) |
+| [`docs/`](docs/) | [How we test](docs/how-we-test.md) and our [publishing policy](docs/release-policy.md) |
 
-**Start with a card.** Two samples show the range:
+**Start with a card.** Two examples show the range:
 
 - [`cards/cve-2026-118066.md`](cards/cve-2026-118066.md): a **Sigma** rule for web-server logs, with ready-to-use Splunk, Microsoft Sentinel and Elastic queries
 - [`cards/cve-2026-123966.md`](cards/cve-2026-123966.md): a **Suricata** network rule
-
-## Free vs. subscription
-
-| | This public repo | Subscription *(opening soon)* |
-|---|---|---|
-| Advisories | Same day | Same day |
-| Rules | A hand-picked sample, about **30 days** after release | **Every** rule, the **morning** it is written |
-| Rule cards and test evidence | For published samples | For every rule |
-| Formats | Sample formats | Sigma, Suricata and YARA, with Sigma conversions for Splunk, Microsoft Sentinel and Elastic |
-| Support and tuning for your environment | Not included | Available |
-
-Subscriptions are opening soon. **Watch** or **star** this repository to hear first.
 
 ## Rule status levels
 
 | Status | Meaning |
 |---|---|
 | `experimental` | Passed automated validation: syntax, it fires on the attack sample, and it stays silent on normal samples. Samples are built from the published advisory or proof of concept. |
-| `test` | Also proven in our lab against the real vulnerable software or realistic traffic. |
-| `stable` | In production use for a period without problems. |
+| `test` | Also proven in a lab against the real vulnerable software or realistic traffic. |
+| `stable` | In use for a period without problems. |
 
 Severity is always the **CVSS v3.1** base score from NVD.
 
@@ -71,6 +56,8 @@ Severity is always the **CVSS v3.1** base score from NVD.
 - **Network rules only see clear text.** HTTPS traffic must be decrypted, or the sensor placed behind TLS termination.
 - **Test in your own environment first,** especially anything marked `experimental`. Each card's false-positive notes
   say what to watch for.
+
+Feedback is welcome. If a rule misses a variant or fires on normal traffic, please open an issue.
 
 ## License
 
