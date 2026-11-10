@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**8 rules** and **4 advisories**, newest first.
+**11 rules** and **6 advisories**, newest first.
 
 | Date | CVE | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-10 | CVE-2026-125086 | D-Link M60 mesh router's MQTT broker accepts a hard-coded admin/admin login | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-125086.md) |
+| 2026-11-10 | CVE-2026-123218 | IBM Aspera Faspex lets a logged-in user become a full administrator | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-123218.md) |
+| 2026-11-10 | CVE-2026-123158 | OpenSSH password login bypass ("SSHole") on some Linux systems built without PAM | Advisory | CVSS 3.1: 8.1 High | advisory | [advisory](advisories/cve-2026-123158.md) |
+| 2026-11-10 | CVE-2026-116779 | FreeSWITCH runs API commands sent in a SIP chat MESSAGE addressed to "api+" | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-116779.md) |
+| 2026-11-10 | CVE-2026-102895 | GPUStack grants admin to anyone whose request looks like it came from localhost | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-102895.md) |
 | 2026-11-09 | CVE-2026-124580 | Feiyuxing VW2100 / VEC10GP command injection via the WeChat Wi-Fi login "extend" value | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-124580.md) |
 | 2026-11-09 | CVE-2026-124560 | D-Link DIR-878 router heap overflow via the "uid" value in the CAPTCHA settings call | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-124560.md) |
 | 2026-11-08 | CVE-2026-124058 | TOTOLINK CA300-PoE buffer overflow via an oversized "ApCliKeyStr" repeater password | Suricata | CVSS 3.1: 9.1 Critical | experimental | [card](cards/cve-2026-124058.md) |
