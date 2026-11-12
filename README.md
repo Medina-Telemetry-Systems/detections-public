@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**12 rules** and **10 advisories**, newest first.
+**14 rules** and **13 advisories**, newest first.
 
 | Date | CVE | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-12 | CVE-2026-67449 | Portabase lets anyone overwrite its master encryption key through an upload header | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-67449.md) |
+| 2026-11-12 | CVE-2026-126768 | OpsTree REMS lets anyone log in as admin by setting an "is_local_auth" flag | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-126768.md) |
+| 2026-11-12 | CVE-2026-126259 | FortiOS high-availability clusters can be taken over with crafted HA packets | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-126259.md) |
+| 2026-11-12 | CVE-2026-124814 | Ultimate Addons for Elementor Forms (WordPress) lets anyone upload a PHP file and take over the site | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-124814.md) |
+| 2026-11-12 | CVE-2026-110697 | Red Hat Quay leaks other tenants' robot-account tokens through an underscore in a namespace name | Advisory | CVSS 3.1: 9.9 Critical | advisory | [advisory](advisories/cve-2026-110697.md) |
 | 2026-11-11 | CVE-2026-20320 | Cisco BroadWorks reads attacker-chosen files through XML external entities in OCI-P messages | Suricata | CVSS 3.1: 7.5 High | experimental | [card](cards/cve-2026-20320.md) |
 | 2026-11-11 | CVE-2026-125350 | Chrome and other Chromium browsers can run attacker code from a crafted web page (XML use-after-free) | Advisory | CVSS 3.1: 8.8 High | advisory | [advisory](advisories/cve-2026-125350.md) |
 | 2026-11-11 | CVE-2026-124194 | Microsoft Outlook spoofing because a risky action happens without warning the user | Advisory | CVSS 3.1: 6.5 Medium | advisory | [advisory](advisories/cve-2026-124194.md) |
