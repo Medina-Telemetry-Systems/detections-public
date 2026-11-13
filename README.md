@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**14 rules** and **13 advisories**, newest first.
+**18 rules** and **14 advisories**, newest first.
 
 | Date | CVE | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-13 | CVE-2026-127275 | Linksys EA8100 router lets anyone on the network change two settings without logging in (JNAP API) | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-127275.md) |
+| 2026-11-13 | CVE-2026-126378 | Vvveb CMS lets an admin upload a PHP web shell inside a theme ZIP (nginx deployments) | Advisory | CVSS 3.1: 9.1 Critical | advisory | [advisory](advisories/cve-2026-126378.md) |
+| 2026-11-13 | CVE-2026-124014 | Copeland XWEB EVO refrigeration controller lets anyone overwrite its system configuration (config.lua) | Suricata | CVSS 3.1: 9.1 Critical | experimental | [card](cards/cve-2026-124014.md) |
+| 2026-11-13 | CVE-2026-124010 | Copeland XWEB EVO refrigeration controller runs any command as root from one web request (xwconsole.cgi) | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-124010.md) |
+| 2026-11-13 | CVE-2026-119077 | ELEX WordPress HelpDesk plugin runs attacker code through a serialized object in a ticket label | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-119077.md) |
 | 2026-11-12 | CVE-2026-67449 | Portabase lets anyone overwrite its master encryption key through an upload header | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-67449.md) |
 | 2026-11-12 | CVE-2026-126768 | OpsTree REMS lets anyone log in as admin by setting an "is_local_auth" flag | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-126768.md) |
 | 2026-11-12 | CVE-2026-126259 | FortiOS high-availability clusters can be taken over with crafted HA packets | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-126259.md) |
