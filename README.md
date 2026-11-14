@@ -13,14 +13,19 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**18 rules** and **14 advisories**, newest first.
+**21 rules** and **16 advisories**, newest first.
 
 | Date | CVE | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
-| 2026-11-13 | CVE-2026-127275 | Linksys EA8100 router lets anyone on the network change two settings without logging in (JNAP API) | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-127275.md) |
+| 2026-11-14 | CVE-2026-63079 | RBH Integra32 access-control server runs attacker code as SYSTEM through its old .NET Remoting port | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-63079.md) |
+| 2026-11-14 | CVE-2026-129171 | NginxPulse log dashboard lets anyone run SQL through its stats API (no login) | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-129171.md) |
+| 2026-11-14 | CVE-2026-126173 | AutomatorWP Webhooks lets anyone reset a WordPress admin's password (specific setup only) | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-126173.md) |
+| 2026-11-14 | CVE-2026-123039 | Check Point Gaia DynamicCLI daemon runs any local user's command as root | Sigma | CVSS 3.1: 7.8 High | experimental | [card](cards/cve-2026-123039.md) |
+| 2026-11-14 | CVE-2026-114713 | UnrealIRCd lets any ordinary user inject server-to-server commands on linked networks | Advisory | CVSS 3.1: 8.6 High | advisory | [advisory](advisories/cve-2026-114713.md) |
+| 2026-11-13 | CVE-2026-127275 | Linksys EA8100 router lets anyone on the network change two settings without logging in | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-127275.md) |
 | 2026-11-13 | CVE-2026-126378 | Vvveb CMS lets an admin upload a PHP web shell inside a theme ZIP (nginx deployments) | Advisory | CVSS 3.1: 9.1 Critical | advisory | [advisory](advisories/cve-2026-126378.md) |
-| 2026-11-13 | CVE-2026-124014 | Copeland XWEB EVO refrigeration controller lets anyone overwrite its system configuration (config.lua) | Suricata | CVSS 3.1: 9.1 Critical | experimental | [card](cards/cve-2026-124014.md) |
-| 2026-11-13 | CVE-2026-124010 | Copeland XWEB EVO refrigeration controller runs any command as root from one web request (xwconsole.cgi) | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-124010.md) |
+| 2026-11-13 | CVE-2026-124014 | Copeland XWEB EVO refrigeration controller lets anyone overwrite its system configuration | Suricata | CVSS 3.1: 9.1 Critical | experimental | [card](cards/cve-2026-124014.md) |
+| 2026-11-13 | CVE-2026-124010 | Copeland XWEB EVO refrigeration controller runs any command as root from one web request | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-124010.md) |
 | 2026-11-13 | CVE-2026-119077 | ELEX WordPress HelpDesk plugin runs attacker code through a serialized object in a ticket label | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-119077.md) |
 | 2026-11-12 | CVE-2026-67449 | Portabase lets anyone overwrite its master encryption key through an upload header | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-67449.md) |
 | 2026-11-12 | CVE-2026-126768 | OpsTree REMS lets anyone log in as admin by setting an "is_local_auth" flag | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-126768.md) |
