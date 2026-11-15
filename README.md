@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**21 rules** and **16 advisories**, newest first.
+**26 rules** and **16 advisories**, newest first.
 
 | Date | CVE | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-15 | CVE-2026-129449 | DrayTek Vigor2960 command injection through a multipart field name in the switch-config upload | Suricata | CVSS 3.1: 9.9 Critical | experimental | [card](cards/cve-2026-129449.md) |
+| 2026-11-15 | CVE-2026-129444 | D-Link DSL-6740C modem ships a hard-coded FTP account with full access | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-129444.md) |
+| 2026-11-15 | CVE-2026-129353 | D-Link DIR-600L login page stack overflow from an oversized "id" or "password", before login | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-129353.md) |
+| 2026-11-15 | CVE-2026-129351 | TRENDnet TEW-657BRM router web server overflow from an oversized ".htm" request, before login | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-129351.md) |
+| 2026-11-15 | CVE-2026-129250 | Edimax BR6478ACV2 router buffer overflow from an oversized PPTP user name | Suricata | CVSS 3.1: 9.9 Critical | experimental | [card](cards/cve-2026-129250.md) |
 | 2026-11-14 | CVE-2026-63079 | RBH Integra32 access-control server runs attacker code as SYSTEM through its old .NET Remoting port | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-63079.md) |
 | 2026-11-14 | CVE-2026-129171 | NginxPulse log dashboard lets anyone run SQL through its stats API (no login) | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-129171.md) |
 | 2026-11-14 | CVE-2026-126173 | AutomatorWP Webhooks lets anyone reset a WordPress admin's password (specific setup only) | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-126173.md) |
