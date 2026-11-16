@@ -1,0 +1,223 @@
+{
+  "name": "Medina Telemetry Systems: detection coverage",
+  "versions": {
+    "attack": "20",
+    "navigator": "5.3.2",
+    "layer": "4.5"
+  },
+  "domain": "enterprise-attack",
+  "description": "ATT&CK techniques tagged on the published rules in github.com/Medina-Telemetry-Systems/detections-public. Score = number of rule files. All rules are experimental; a score means a rule exists, not that every variant is detected.",
+  "gradient": {
+    "colors": [
+      "#dbe9f6",
+      "#1f4e79"
+    ],
+    "minValue": 1,
+    "maxValue": 28
+  },
+  "techniques": [
+    {
+      "techniqueID": "T1059",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": false,
+      "comment": "1 rule file(s): CVE-2026-102895",
+      "metadata": [
+        {
+          "name": "CVE-2026-102895",
+          "value": "Sigma: rules/sigma/cve-2026-102895-gpustack-inference-backend-from-yaml.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1059.004",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": true,
+      "comment": "1 rule file(s): CVE-2026-124010",
+      "metadata": [
+        {
+          "name": "CVE-2026-124010",
+          "value": "Sigma: rules/sigma/cve-2026-124010-xweb-evo-xwconsole-cgi-sh-param.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1068",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": false,
+      "comment": "1 rule file(s): CVE-2026-123039",
+      "metadata": [
+        {
+          "name": "CVE-2026-123039",
+          "value": "Sigma: rules/sigma/cve-2026-123039-checkpoint-dynamiccli-unwrapped-command.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1078.001",
+      "score": 2,
+      "enabled": true,
+      "showSubtechniques": true,
+      "comment": "2 rule file(s): CVE-2026-125086, CVE-2026-129444",
+      "metadata": [
+        {
+          "name": "CVE-2026-125086",
+          "value": "Suricata: rules/suricata/cve-2026-125086-dlink-m60-mqtt-hardcoded-credentials.rules"
+        },
+        {
+          "name": "CVE-2026-129444",
+          "value": "Suricata: rules/suricata/cve-2026-129444-dlink-dsl6740c-ftp-hardcoded-test-account.rules"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1098",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": false,
+      "comment": "1 rule file(s): CVE-2026-118066",
+      "metadata": [
+        {
+          "name": "CVE-2026-118066",
+          "value": "Sigma: rules/sigma/cve-2026-118066-latepoint-is-not-null-account-takeover.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 28,
+      "enabled": true,
+      "showSubtechniques": false,
+      "comment": "28 rule file(s): CVE-2026-102895, CVE-2026-116779, CVE-2026-118066, CVE-2026-119077, CVE-2026-123957, CVE-2026-123958, CVE-2026-123966, CVE-2026-124010, CVE-2026-124014, CVE-2026-124057, CVE-2026-124058, CVE-2026-124580, CVE-2026-126768, CVE-2026-127275, CVE-2026-129171, CVE-2026-129250, CVE-2026-129351, CVE-2026-129353, CVE-2026-129449, CVE-2026-129450, CVE-2026-129451, CVE-2026-20320, CVE-2026-63079, CVE-2026-67449, CVE-2026-71495",
+      "metadata": [
+        {
+          "name": "CVE-2026-102895",
+          "value": "Sigma: rules/sigma/cve-2026-102895-gpustack-inference-backend-from-yaml.yml"
+        },
+        {
+          "name": "CVE-2026-118066",
+          "value": "Sigma: rules/sigma/cve-2026-118066-latepoint-is-not-null-account-takeover.yml"
+        },
+        {
+          "name": "CVE-2026-124010",
+          "value": "Sigma: rules/sigma/cve-2026-124010-xweb-evo-xwconsole-cgi-sh-param.yml"
+        },
+        {
+          "name": "CVE-2026-129171",
+          "value": "Sigma: rules/sigma/cve-2026-129171-nginxpulse-api-stats-sqli.yml"
+        },
+        {
+          "name": "CVE-2026-102895",
+          "value": "Suricata: rules/suricata/cve-2026-102895-gpustack-real-ip-loopback-auth-bypass.rules"
+        },
+        {
+          "name": "CVE-2026-116779",
+          "value": "Suricata: rules/suricata/cve-2026-116779-freeswitch-sip-message-api-proto.rules"
+        },
+        {
+          "name": "CVE-2026-119077",
+          "value": "Suricata: rules/suricata/cve-2026-119077-elex-helpdesk-ticket-label-php-object-injection.rules"
+        },
+        {
+          "name": "CVE-2026-123957",
+          "value": "Suricata: rules/suricata/cve-2026-123957-totolink-ca300-setipqosrules-overflow.rules"
+        },
+        {
+          "name": "CVE-2026-123958",
+          "value": "Suricata: rules/suricata/cve-2026-123958-totolink-ca300-setlanconfig-overflow.rules"
+        },
+        {
+          "name": "CVE-2026-123966",
+          "value": "Suricata: rules/suricata/cve-2026-123966-tenda-ac19-saveparentcontrolinfo-overflow.rules"
+        },
+        {
+          "name": "CVE-2026-124010",
+          "value": "Suricata: rules/suricata/cve-2026-124010-xweb-evo-xwconsole-cgi-cmdi.rules"
+        },
+        {
+          "name": "CVE-2026-124014",
+          "value": "Suricata: rules/suricata/cve-2026-124014-xweb-evo-config-lua-unauth-write.rules"
+        },
+        {
+          "name": "CVE-2026-124057",
+          "value": "Suricata: rules/suricata/cve-2026-124057-totolink-ca300-setwifimultipleconfig-overflow.rules"
+        },
+        {
+          "name": "CVE-2026-124058",
+          "value": "Suricata: rules/suricata/cve-2026-124058-totolink-ca300-setwifirepeaterconfig-overflow.rules"
+        },
+        {
+          "name": "CVE-2026-124580",
+          "value": "Suricata: rules/suricata/cve-2026-124580-feiyuxing-vros-weixin-auth-cmdi.rules"
+        },
+        {
+          "name": "CVE-2026-126768",
+          "value": "Suricata: rules/suricata/cve-2026-126768-opstree-rems-is-local-auth-bypass.rules"
+        },
+        {
+          "name": "CVE-2026-127275",
+          "value": "Suricata: rules/suricata/cve-2026-127275-linksys-ea8100-jnap-unauth-set.rules"
+        },
+        {
+          "name": "CVE-2026-129171",
+          "value": "Suricata: rules/suricata/cve-2026-129171-nginxpulse-api-stats-sqli.rules"
+        },
+        {
+          "name": "CVE-2026-129250",
+          "value": "Suricata: rules/suricata/cve-2026-129250-edimax-br6478acv2-pptpusername-overflow.rules"
+        },
+        {
+          "name": "CVE-2026-129351",
+          "value": "Suricata: rules/suricata/cve-2026-129351-trendnet-tew657brm-long-htm-path-overflow.rules"
+        },
+        {
+          "name": "CVE-2026-129353",
+          "value": "Suricata: rules/suricata/cve-2026-129353-dlink-dir600l-authentication-cgi-overflow.rules"
+        },
+        {
+          "name": "CVE-2026-129449",
+          "value": "Suricata: rules/suricata/cve-2026-129449-draytek-vigor2960-swmconfigupload-fieldname-cmdi.rules"
+        },
+        {
+          "name": "CVE-2026-129450",
+          "value": "Suricata: rules/suricata/cve-2026-129450-draytek-vigor2960-dowebbackup-option-traversal.rules"
+        },
+        {
+          "name": "CVE-2026-129451",
+          "value": "Suricata: rules/suricata/cve-2026-129451-draytek-vigor2960-app-guest-export-filename-traversal.rules"
+        },
+        {
+          "name": "CVE-2026-20320",
+          "value": "Suricata: rules/suricata/cve-2026-20320-cisco-broadworks-oci-p-xxe.rules"
+        },
+        {
+          "name": "CVE-2026-63079",
+          "value": "Suricata: rules/suricata/cve-2026-63079-rbh-integra32-remoting-deserialization.rules"
+        },
+        {
+          "name": "CVE-2026-67449",
+          "value": "Suricata: rules/suricata/cve-2026-67449-portabase-tus-x-file-path-traversal.rules"
+        },
+        {
+          "name": "CVE-2026-71495",
+          "value": "Suricata: rules/suricata/cve-2026-71495-wanderer-trail-download-ssrf.rules"
+        }
+      ]
+    }
+  ],
+  "legendItems": [
+    {
+      "label": "Fewer rules",
+      "color": "#dbe9f6"
+    },
+    {
+      "label": "More rules",
+      "color": "#1f4e79"
+    }
+  ],
+  "showTacticRowBackground": false,
+  "selectSubtechniquesWithParent": false,
+  "hideDisabled": false
+}

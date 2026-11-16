@@ -74,6 +74,7 @@ for a reliable rule, we publish an advisory instead of guessing.
 | [`rules/`](rules/) | Detection rules: `sigma/`, `suricata/`, `yara/` |
 | [`cards/`](cards/) | One **rule card** per vulnerability: what the rule detects and why, the quoted source evidence, false-positive notes, test results, ATT&CK mapping, and what is still uncertain |
 | [`tests/`](tests/) | The harmless test samples each rule was proven against (`match*` must alert, `nomatch*` must stay silent) |
+| [`coverage/`](coverage/) | The [ATT&CK coverage map](coverage/README.md): which MITRE ATT&CK techniques the rules cover, as a table and an ATT&CK Navigator layer |
 | [`docs/`](docs/) | [How we test](docs/how-we-test.md) and our [publishing policy](docs/release-policy.md) |
 
 **Start with a card.** Two examples show the range:

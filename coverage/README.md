@@ -1,0 +1,28 @@
+# ATT&CK coverage
+
+Which [MITRE ATT&CK](https://attack.mitre.org/) techniques the published rules in this repository detect, built from
+the ATT&CK tags in each rule file. It covers **31 rule files** across **6 techniques**.
+
+**[Open the coverage map in ATT&CK Navigator](https://mitre-attack.github.io/attack-navigator/#layerURL=https%3A%2F%2Fraw.githubusercontent.com%2FMedina-Telemetry-Systems%2Fdetections-public%2Fmain%2Fcoverage%2Fattack-coverage-layer.json)** (ATT&CK v20, Enterprise). Darker cells have more
+rules. Hover over a technique to see which vulnerabilities it covers.
+
+The raw layer file is [`attack-coverage-layer.json`](attack-coverage-layer.json). You can also load it into your own
+Navigator instance with **Open Existing Layer**.
+
+| Technique | Name | Rule files | Vulnerabilities |
+|:--|:--|:--|:--|
+| [T1190](https://attack.mitre.org/techniques/T1190/) | Exploit Public-Facing Application | 28 | [CVE-2026-102895](../cards/cve-2026-102895.md), [CVE-2026-116779](../cards/cve-2026-116779.md), [CVE-2026-118066](../cards/cve-2026-118066.md), [CVE-2026-119077](../cards/cve-2026-119077.md), [CVE-2026-123957](../cards/cve-2026-123957.md), [CVE-2026-123958](../cards/cve-2026-123958.md), [CVE-2026-123966](../cards/cve-2026-123966.md), [CVE-2026-124010](../cards/cve-2026-124010.md), [CVE-2026-124014](../cards/cve-2026-124014.md), [CVE-2026-124057](../cards/cve-2026-124057.md), [CVE-2026-124058](../cards/cve-2026-124058.md), [CVE-2026-124580](../cards/cve-2026-124580.md), [CVE-2026-126768](../cards/cve-2026-126768.md), [CVE-2026-127275](../cards/cve-2026-127275.md), [CVE-2026-129171](../cards/cve-2026-129171.md), [CVE-2026-129250](../cards/cve-2026-129250.md), [CVE-2026-129351](../cards/cve-2026-129351.md), [CVE-2026-129353](../cards/cve-2026-129353.md), [CVE-2026-129449](../cards/cve-2026-129449.md), [CVE-2026-129450](../cards/cve-2026-129450.md), [CVE-2026-129451](../cards/cve-2026-129451.md), [CVE-2026-20320](../cards/cve-2026-20320.md), [CVE-2026-63079](../cards/cve-2026-63079.md), [CVE-2026-67449](../cards/cve-2026-67449.md), [CVE-2026-71495](../cards/cve-2026-71495.md) |
+| [T1078.001](https://attack.mitre.org/techniques/T1078/001/) | Valid Accounts: Default Accounts | 2 | [CVE-2026-125086](../cards/cve-2026-125086.md), [CVE-2026-129444](../cards/cve-2026-129444.md) |
+| [T1059](https://attack.mitre.org/techniques/T1059/) | Command and Scripting Interpreter | 1 | [CVE-2026-102895](../cards/cve-2026-102895.md) |
+| [T1059.004](https://attack.mitre.org/techniques/T1059/004/) | Command and Scripting Interpreter: Unix Shell | 1 | [CVE-2026-124010](../cards/cve-2026-124010.md) |
+| [T1068](https://attack.mitre.org/techniques/T1068/) | Exploitation for Privilege Escalation | 1 | [CVE-2026-123039](../cards/cve-2026-123039.md) |
+| [T1098](https://attack.mitre.org/techniques/T1098/) | Account Manipulation | 1 | [CVE-2026-118066](../cards/cve-2026-118066.md) |
+
+## How to read this
+- **The map shows where rules exist, not proof of detection.** All rules are `experimental`: validated against test
+  samples, not yet lab-tested. See [Rule status levels](../README.md#rule-status-levels).
+- **Most rules sit on Initial Access (T1190)** because each one detects exploitation of a specific vulnerability as it
+  arrives. The map also shows the gap: what an attacker does after getting in (execution, persistence, lateral movement)
+  is barely covered yet.
+- **One rule file can carry more than one technique,** for example exploitation followed by command execution.
+- The map updates each time rules are published.
