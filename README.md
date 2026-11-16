@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**26 rules** and **16 advisories**, newest first.
+**28 rules** and **19 advisories**, newest first.
 
 | Date | CVE | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-16 | CVE-2026-129483 | Cyrus SASL's SRP mechanism lets anyone log in as any user without the password | Advisory | CVSS 3.1: 9.1 Critical | advisory | [advisory](advisories/cve-2026-129483.md) |
+| 2026-11-16 | CVE-2026-129451 | DrayTek Vigor2960 path traversal in the guest-list export name lets an admin write and delete files as root | Suricata | CVSS 3.1: 9.9 Critical | experimental | [card](cards/cve-2026-129451.md) |
+| 2026-11-16 | CVE-2026-129450 | DrayTek Vigor2960 path traversal in the web-backup archive name lets an admin write and delete files as root | Suricata | CVSS 3.1: 9.9 Critical | experimental | [card](cards/cve-2026-129450.md) |
+| 2026-11-16 | CVE-2026-125769 | Advanced Form Integration (WordPress) privilege escalation to administrator | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-125769.md) |
+| 2026-11-16 | CVE-2026-122662 | Document Library Pro (WordPress) PHP object injection without login | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-122662.md) |
 | 2026-11-15 | CVE-2026-129449 | DrayTek Vigor2960 command injection through a multipart field name in the switch-config upload | Suricata | CVSS 3.1: 9.9 Critical | experimental | [card](cards/cve-2026-129449.md) |
 | 2026-11-15 | CVE-2026-129444 | D-Link DSL-6740C modem ships a hard-coded FTP account with full access | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-129444.md) |
 | 2026-11-15 | CVE-2026-129353 | D-Link DIR-600L login page stack overflow from an oversized "id" or "password", before login | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-129353.md) |
