@@ -13,10 +13,11 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**28 rules** and **19 advisories**, newest first.
+**29 rules** and **19 advisories**, newest first.
 
-| Date | CVE | Issue | Type | Severity | Status | Details |
+| Date | CVE or actor | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-16 | INC Ransom | post-access behavior on Windows (4 Sigma rules) | Sigma | Behavior rule (no CVSS) | experimental | [card](cards/actor-incransom.md) |
 | 2026-11-16 | CVE-2026-129483 | Cyrus SASL's SRP mechanism lets anyone log in as any user without the password | Advisory | CVSS 3.1: 9.1 Critical | advisory | [advisory](advisories/cve-2026-129483.md) |
 | 2026-11-16 | CVE-2026-129451 | DrayTek Vigor2960 path traversal in the guest-list export name lets an admin write and delete files as root | Suricata | CVSS 3.1: 9.9 Critical | experimental | [card](cards/cve-2026-129451.md) |
 | 2026-11-16 | CVE-2026-129450 | DrayTek Vigor2960 path traversal in the web-backup archive name lets an admin write and delete files as root | Suricata | CVSS 3.1: 9.9 Critical | experimental | [card](cards/cve-2026-129450.md) |
@@ -72,7 +73,7 @@ for a reliable rule, we publish an advisory instead of guessing.
 |---|---|
 | [`advisories/`](advisories/) | Plain-English advisories for important vulnerabilities, especially ones that are actively exploited but have no published technical details yet |
 | [`rules/`](rules/) | Detection rules: `sigma/`, `suricata/`, `yara/` |
-| [`cards/`](cards/) | One **rule card** per vulnerability: what the rule detects and why, the quoted source evidence, false-positive notes, test results, ATT&CK mapping, and what is still uncertain |
+| [`cards/`](cards/) | One **rule card** per vulnerability or threat actor: what the rule detects and why, the quoted source evidence, false-positive notes, test results, ATT&CK mapping, and what is still uncertain |
 | [`tests/`](tests/) | The harmless test samples each rule was proven against (`match*` must alert, `nomatch*` must stay silent) |
 | [`coverage/`](coverage/) | The [ATT&CK coverage map](coverage/README.md): which MITRE ATT&CK techniques the rules cover, as a table and an ATT&CK Navigator layer |
 | [`docs/`](docs/) | [How we test](docs/how-we-test.md) and our [publishing policy](docs/release-policy.md) |

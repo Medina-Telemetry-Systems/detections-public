@@ -1,0 +1,1 @@
+{"Channel": "System", "Provider_Name": "Service Control Manager", "Computer": "srv01.example.local", "TimeCreated": "2026-11-16T03:10:00Z", "EventID": 7045, "ServiceName": "MTSMarkerSvc", "ImagePath": "C:\\Windows\\winupd.exe", "ServiceType": "user mode service", "StartType": "demand start", "AccountName": "LocalSystem"}

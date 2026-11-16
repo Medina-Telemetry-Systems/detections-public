@@ -1,0 +1,32 @@
+title: INC Ransom EDR-Killer Driver Installed As A Service
+id: 31ec712e-feca-4fd7-bf97-55ff09c94c39
+status: experimental
+description: |
+  Detects a new service whose image is one of the vulnerable drivers filwfp.sys, filnk.sys or fildds.sys. In recent INC
+  Ransom intrusions, a custom process terminator dropped these drivers and installed them as a service to kill security
+  products (bring your own vulnerable driver).
+references:
+  - https://www.acronis.com/en/tru/posts/from-emerging-threat-to-top-tier-ransomware-as-a-service-the-evolution-of-inc-ransomware/
+author: Medina Telemetry Systems
+date: 2026-11-16
+license: DRL-1.1
+tags:
+  - attack.privilege-escalation
+  - attack.t1068
+  - attack.persistence
+  - attack.t1543.003
+logsource:
+  product: windows
+  service: system
+detection:
+  selection:
+    EventID: 7045
+    ImagePath|endswith:
+      - '\filwfp.sys'
+      - '\filnk.sys'
+      - '\fildds.sys'
+  condition: selection
+falsepositives:
+  - Legitimate software that ships a driver with one of these exact file names. Acronis does not say which product the
+    drivers come from; confirm the file's signer and whether it belongs to installed software.
+level: high

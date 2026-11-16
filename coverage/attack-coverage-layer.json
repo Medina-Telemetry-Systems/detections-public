@@ -17,6 +17,19 @@
   },
   "techniques": [
     {
+      "techniqueID": "T1036.005",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": true,
+      "comment": "1 rule file(s): INC Ransom",
+      "metadata": [
+        {
+          "name": "INC Ransom",
+          "value": "Sigma: rules/sigma/actor-incransom-winupd-service.yml"
+        }
+      ]
+    },
+    {
       "techniqueID": "T1059",
       "score": 1,
       "enabled": true,
@@ -44,11 +57,15 @@
     },
     {
       "techniqueID": "T1068",
-      "score": 1,
+      "score": 2,
       "enabled": true,
       "showSubtechniques": false,
-      "comment": "1 rule file(s): CVE-2026-123039",
+      "comment": "2 rule file(s): CVE-2026-123039, INC Ransom",
       "metadata": [
+        {
+          "name": "INC Ransom",
+          "value": "Sigma: rules/sigma/actor-incransom-vulnerable-driver-service.yml"
+        },
         {
           "name": "CVE-2026-123039",
           "value": "Sigma: rules/sigma/cve-2026-123039-checkpoint-dynamiccli-unwrapped-command.yml"
@@ -203,6 +220,58 @@
         {
           "name": "CVE-2026-71495",
           "value": "Suricata: rules/suricata/cve-2026-71495-wanderer-trail-download-ssrf.rules"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1486",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": false,
+      "comment": "1 rule file(s): INC Ransom",
+      "metadata": [
+        {
+          "name": "INC Ransom",
+          "value": "Sigma: rules/sigma/actor-incransom-ransom-note.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1543.003",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": true,
+      "comment": "1 rule file(s): INC Ransom",
+      "metadata": [
+        {
+          "name": "INC Ransom",
+          "value": "Sigma: rules/sigma/actor-incransom-vulnerable-driver-service.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1555",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": false,
+      "comment": "1 rule file(s): INC Ransom",
+      "metadata": [
+        {
+          "name": "INC Ransom",
+          "value": "Sigma: rules/sigma/actor-incransom-veeam-credential-dump.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1569.002",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": true,
+      "comment": "1 rule file(s): INC Ransom",
+      "metadata": [
+        {
+          "name": "INC Ransom",
+          "value": "Sigma: rules/sigma/actor-incransom-winupd-service.yml"
         }
       ]
     }

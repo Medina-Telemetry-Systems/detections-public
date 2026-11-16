@@ -1,0 +1,26 @@
+title: INC Ransom Ransom Note Created
+id: a5d576b7-83c4-439f-ba05-90f1b6c15d6e
+status: experimental
+description: |
+  Detects creation of the INC Ransom ransom note, INC-README.txt or INC-README.html. The encryptor drops both versions in
+  encrypted folders. A hit means encryption has started on that host.
+references:
+  - https://www.acronis.com/en/tru/posts/from-emerging-threat-to-top-tier-ransomware-as-a-service-the-evolution-of-inc-ransomware/
+author: Medina Telemetry Systems
+date: 2026-11-16
+license: DRL-1.1
+tags:
+  - attack.impact
+  - attack.t1486
+logsource:
+  product: windows
+  category: file_event
+detection:
+  selection:
+    TargetFilename|endswith:
+      - '\INC-README.txt'
+      - '\INC-README.html'
+  condition: selection
+falsepositives:
+  - Security researchers or training labs handling copies of the note.
+level: critical

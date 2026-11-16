@@ -1,0 +1,1 @@
+{"Channel": "System", "Provider_Name": "Service Control Manager", "Computer": "srv01.example.local", "TimeCreated": "2026-11-16T03:10:00Z", "EventID": 7036, "param1": "winupd", "param2": "running", "ServiceName": "winupd"}

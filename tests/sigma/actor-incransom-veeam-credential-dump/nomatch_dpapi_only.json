@@ -1,0 +1,1 @@
+{"Channel": "Microsoft-Windows-PowerShell/Operational", "Provider_Name": "Microsoft-Windows-PowerShell", "EventID": 4104, "Computer": "veeam01.example.local", "Path": "", "ScriptBlockText": "# MTS-TEST-MARKER\n$raw = [System.Security.Cryptography.ProtectedData]::Unprotect($blob, $null, 'CurrentUser')"}

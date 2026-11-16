@@ -1,0 +1,33 @@
+title: INC Ransom Service Named winupd Installed
+id: 877a3fd8-4ca9-4ddc-a350-2fa629255ffc
+status: experimental
+description: |
+  Detects installation of a Windows service named "winupd", or of a service whose program is winupd.exe.
+  INC Ransom affiliates have run the encryptor as a service named "winupd" through the Service Control Manager (System log
+  event 7045), and renamed PsExec to "winupd" so it looks like a Windows update component. Windows has no built-in service
+  with this name.
+references:
+  - https://attack.mitre.org/groups/G1032/
+  - https://www.cyber.gov.au/advisory/inc-ransom-affiliate-model-enabling-targeting-of-critical-networks
+author: Medina Telemetry Systems
+date: 2026-11-16
+license: DRL-1.1
+tags:
+  - attack.execution
+  - attack.t1569.002
+  - attack.stealth
+  - attack.t1036.005
+logsource:
+  product: windows
+  service: system
+detection:
+  selection_event:
+    EventID: 7045
+  selection_name:
+    ServiceName: 'winupd'
+  selection_path:
+    ImagePath|endswith: '\winupd.exe'
+  condition: selection_event and (selection_name or selection_path)
+falsepositives:
+  - Third-party software that happens to install a service named winupd (none known). Check the ImagePath and who installed it.
+level: high

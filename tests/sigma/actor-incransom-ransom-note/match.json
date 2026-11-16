@@ -1,0 +1,1 @@
+{"Channel": "Microsoft-Windows-Sysmon/Operational", "Provider_Name": "Microsoft-Windows-Sysmon", "EventID": 11, "Computer": "fs01.example.local", "Image": "C:\\ProgramData\\mts-marker.exe", "TargetFilename": "C:\\Shares\\Finance\\INC-README.txt"}
