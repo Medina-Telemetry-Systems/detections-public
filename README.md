@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**29 rules** and **19 advisories**, newest first.
+**34 rules** and **19 advisories**, newest first.
 
 | Date | CVE or actor | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-17 | CVE-2026-130072 | Cloud Commander unauthenticated file rename with path traversal | Suricata | CVSS 3.1: 9.1 Critical | experimental | [card](cards/cve-2026-130072.md) |
+| 2026-11-17 | CVE-2026-130071 | go1cms lets anyone edit any record, including user accounts | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-130071.md) |
+| 2026-11-17 | CVE-2026-129955 | NodePress admin login works with the built-in default password "root" | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-129955.md) |
+| 2026-11-17 | CVE-2026-129941 | Prime CMS lets anyone register an admin account through GraphQL | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-129941.md) |
+| 2026-11-17 | CVE-2026-129448 | Apache Roller XML-RPC deserializes attacker objects before login | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-129448.md) |
 | 2026-11-16 | INC Ransom | post-access behavior on Windows (4 Sigma rules) | Sigma | Behavior rule (no CVSS) | experimental | [card](cards/actor-incransom.md) |
 | 2026-11-16 | CVE-2026-129483 | Cyrus SASL's SRP mechanism lets anyone log in as any user without the password | Advisory | CVSS 3.1: 9.1 Critical | advisory | [advisory](advisories/cve-2026-129483.md) |
 | 2026-11-16 | CVE-2026-129451 | DrayTek Vigor2960 path traversal in the guest-list export name lets an admin write and delete files as root | Suricata | CVSS 3.1: 9.9 Critical | experimental | [card](cards/cve-2026-129451.md) |

@@ -13,7 +13,7 @@
       "#1f4e79"
     ],
     "minValue": 1,
-    "maxValue": 28
+    "maxValue": 31
   },
   "techniques": [
     {
@@ -74,10 +74,10 @@
     },
     {
       "techniqueID": "T1078.001",
-      "score": 2,
+      "score": 3,
       "enabled": true,
       "showSubtechniques": true,
-      "comment": "2 rule file(s): CVE-2026-125086, CVE-2026-129444",
+      "comment": "3 rule file(s): CVE-2026-125086, CVE-2026-129444, CVE-2026-129955",
       "metadata": [
         {
           "name": "CVE-2026-125086",
@@ -86,6 +86,10 @@
         {
           "name": "CVE-2026-129444",
           "value": "Suricata: rules/suricata/cve-2026-129444-dlink-dsl6740c-ftp-hardcoded-test-account.rules"
+        },
+        {
+          "name": "CVE-2026-129955",
+          "value": "Suricata: rules/suricata/cve-2026-129955-nodepress-admin-login-default-password.rules"
         }
       ]
     },
@@ -103,11 +107,24 @@
       ]
     },
     {
-      "techniqueID": "T1190",
-      "score": 28,
+      "techniqueID": "T1136",
+      "score": 1,
       "enabled": true,
       "showSubtechniques": false,
-      "comment": "28 rule file(s): CVE-2026-102895, CVE-2026-116779, CVE-2026-118066, CVE-2026-119077, CVE-2026-123957, CVE-2026-123958, CVE-2026-123966, CVE-2026-124010, CVE-2026-124014, CVE-2026-124057, CVE-2026-124058, CVE-2026-124580, CVE-2026-126768, CVE-2026-127275, CVE-2026-129171, CVE-2026-129250, CVE-2026-129351, CVE-2026-129353, CVE-2026-129449, CVE-2026-129450, CVE-2026-129451, CVE-2026-20320, CVE-2026-63079, CVE-2026-67449, CVE-2026-71495",
+      "comment": "1 rule file(s): CVE-2026-129941",
+      "metadata": [
+        {
+          "name": "CVE-2026-129941",
+          "value": "Suricata: rules/suricata/cve-2026-129941-prime-cms-graphql-createuser.rules"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1190",
+      "score": 31,
+      "enabled": true,
+      "showSubtechniques": false,
+      "comment": "31 rule file(s): CVE-2026-102895, CVE-2026-116779, CVE-2026-118066, CVE-2026-119077, CVE-2026-123957, CVE-2026-123958, CVE-2026-123966, CVE-2026-124010, CVE-2026-124014, CVE-2026-124057, CVE-2026-124058, CVE-2026-124580, CVE-2026-126768, CVE-2026-127275, CVE-2026-129171, CVE-2026-129250, CVE-2026-129351, CVE-2026-129353, CVE-2026-129448, CVE-2026-129449, CVE-2026-129450, CVE-2026-129451, CVE-2026-130071, CVE-2026-130072, CVE-2026-20320, CVE-2026-63079, CVE-2026-67449, CVE-2026-71495",
       "metadata": [
         {
           "name": "CVE-2026-102895",
@@ -194,6 +211,10 @@
           "value": "Suricata: rules/suricata/cve-2026-129353-dlink-dir600l-authentication-cgi-overflow.rules"
         },
         {
+          "name": "CVE-2026-129448",
+          "value": "Suricata: rules/suricata/cve-2026-129448-apache-roller-xmlrpc-extension-types.rules"
+        },
+        {
           "name": "CVE-2026-129449",
           "value": "Suricata: rules/suricata/cve-2026-129449-draytek-vigor2960-swmconfigupload-fieldname-cmdi.rules"
         },
@@ -204,6 +225,14 @@
         {
           "name": "CVE-2026-129451",
           "value": "Suricata: rules/suricata/cve-2026-129451-draytek-vigor2960-app-guest-export-filename-traversal.rules"
+        },
+        {
+          "name": "CVE-2026-130071",
+          "value": "Suricata: rules/suricata/cve-2026-130071-go1cms-update-doc-user-doctype.rules"
+        },
+        {
+          "name": "CVE-2026-130072",
+          "value": "Suricata: rules/suricata/cve-2026-130072-cloudcmd-put-rename-traversal.rules"
         },
         {
           "name": "CVE-2026-20320",
