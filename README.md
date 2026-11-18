@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**34 rules** and **19 advisories**, newest first.
+**38 rules** and **20 advisories**, newest first.
 
 | Date | CVE or actor | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-18 | CVE-2026-61680 | WeGIA lets anyone create charge (billing) records without logging in | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-61680.md) |
+| 2026-11-18 | CVE-2026-130856 | 53AIHub lets anyone re-run the installer and take over admin accounts | Sigma | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-130856.md) |
+| 2026-11-18 | CVE-2026-130583 | Rootways Authorize.net CIM Pro (Magento 2) Apple Pay SSRF reads store secrets | Sigma, Suricata | CVSS 3.1: 9.3 Critical | experimental | [card](cards/cve-2026-130583.md) |
+| 2026-11-18 | CVE-2026-115731 | Puppet Server runs attacker code from a crafted agent report | Advisory | CVSS 3.1: 9.9 Critical | advisory | [advisory](advisories/cve-2026-115731.md) |
+| 2026-11-18 | CVE-2026-100397 | Rucio accepts SSH challenge nonces as login tokens (log in as any account, including root) | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-100397.md) |
 | 2026-11-17 | CVE-2026-130072 | Cloud Commander unauthenticated file rename with path traversal | Suricata | CVSS 3.1: 9.1 Critical | experimental | [card](cards/cve-2026-130072.md) |
 | 2026-11-17 | CVE-2026-130071 | go1cms lets anyone edit any record, including user accounts | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-130071.md) |
 | 2026-11-17 | CVE-2026-129955 | NodePress admin login works with the built-in default password "root" | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-129955.md) |

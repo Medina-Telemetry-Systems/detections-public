@@ -13,7 +13,7 @@
       "#1f4e79"
     ],
     "minValue": 1,
-    "maxValue": 31
+    "maxValue": 35
   },
   "techniques": [
     {
@@ -73,6 +73,19 @@
       ]
     },
     {
+      "techniqueID": "T1078",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": false,
+      "comment": "1 rule file(s): CVE-2026-100397",
+      "metadata": [
+        {
+          "name": "CVE-2026-100397",
+          "value": "Suricata: rules/suricata/cve-2026-100397-rucio-challenge-token-as-auth-token.rules"
+        }
+      ]
+    },
+    {
       "techniqueID": "T1078.001",
       "score": 3,
       "enabled": true,
@@ -95,14 +108,18 @@
     },
     {
       "techniqueID": "T1098",
-      "score": 1,
+      "score": 2,
       "enabled": true,
       "showSubtechniques": false,
-      "comment": "1 rule file(s): CVE-2026-118066",
+      "comment": "2 rule file(s): CVE-2026-118066, CVE-2026-130856",
       "metadata": [
         {
           "name": "CVE-2026-118066",
           "value": "Sigma: rules/sigma/cve-2026-118066-latepoint-is-not-null-account-takeover.yml"
+        },
+        {
+          "name": "CVE-2026-130856",
+          "value": "Sigma: rules/sigma/cve-2026-130856-53aihub-api-init-reinitialization.yml"
         }
       ]
     },
@@ -121,10 +138,10 @@
     },
     {
       "techniqueID": "T1190",
-      "score": 31,
+      "score": 35,
       "enabled": true,
       "showSubtechniques": false,
-      "comment": "31 rule file(s): CVE-2026-102895, CVE-2026-116779, CVE-2026-118066, CVE-2026-119077, CVE-2026-123957, CVE-2026-123958, CVE-2026-123966, CVE-2026-124010, CVE-2026-124014, CVE-2026-124057, CVE-2026-124058, CVE-2026-124580, CVE-2026-126768, CVE-2026-127275, CVE-2026-129171, CVE-2026-129250, CVE-2026-129351, CVE-2026-129353, CVE-2026-129448, CVE-2026-129449, CVE-2026-129450, CVE-2026-129451, CVE-2026-130071, CVE-2026-130072, CVE-2026-20320, CVE-2026-63079, CVE-2026-67449, CVE-2026-71495",
+      "comment": "35 rule file(s): CVE-2026-102895, CVE-2026-116779, CVE-2026-118066, CVE-2026-119077, CVE-2026-123957, CVE-2026-123958, CVE-2026-123966, CVE-2026-124010, CVE-2026-124014, CVE-2026-124057, CVE-2026-124058, CVE-2026-124580, CVE-2026-126768, CVE-2026-127275, CVE-2026-129171, CVE-2026-129250, CVE-2026-129351, CVE-2026-129353, CVE-2026-129448, CVE-2026-129449, CVE-2026-129450, CVE-2026-129451, CVE-2026-130071, CVE-2026-130072, CVE-2026-130583, CVE-2026-130856, CVE-2026-20320, CVE-2026-61680, CVE-2026-63079, CVE-2026-67449, CVE-2026-71495",
       "metadata": [
         {
           "name": "CVE-2026-102895",
@@ -141,6 +158,14 @@
         {
           "name": "CVE-2026-129171",
           "value": "Sigma: rules/sigma/cve-2026-129171-nginxpulse-api-stats-sqli.yml"
+        },
+        {
+          "name": "CVE-2026-130583",
+          "value": "Sigma: rules/sigma/cve-2026-130583-rootways-authorizecim-applepay-ssrf.yml"
+        },
+        {
+          "name": "CVE-2026-130856",
+          "value": "Sigma: rules/sigma/cve-2026-130856-53aihub-api-init-reinitialization.yml"
         },
         {
           "name": "CVE-2026-102895",
@@ -235,8 +260,16 @@
           "value": "Suricata: rules/suricata/cve-2026-130072-cloudcmd-put-rename-traversal.rules"
         },
         {
+          "name": "CVE-2026-130583",
+          "value": "Suricata: rules/suricata/cve-2026-130583-rootways-authorizecim-applepay-ssrf.rules"
+        },
+        {
           "name": "CVE-2026-20320",
           "value": "Suricata: rules/suricata/cve-2026-20320-cisco-broadworks-oci-p-xxe.rules"
+        },
+        {
+          "name": "CVE-2026-61680",
+          "value": "Suricata: rules/suricata/cve-2026-61680-wegia-cobrancas-geracao-unauth.rules"
         },
         {
           "name": "CVE-2026-63079",
@@ -275,6 +308,19 @@
         {
           "name": "INC Ransom",
           "value": "Sigma: rules/sigma/actor-incransom-vulnerable-driver-service.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1552.001",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": true,
+      "comment": "1 rule file(s): CVE-2026-130583",
+      "metadata": [
+        {
+          "name": "CVE-2026-130583",
+          "value": "Sigma: rules/sigma/cve-2026-130583-rootways-authorizecim-applepay-ssrf.yml"
         }
       ]
     },
