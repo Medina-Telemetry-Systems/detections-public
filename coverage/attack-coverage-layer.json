@@ -13,7 +13,7 @@
       "#1f4e79"
     ],
     "minValue": 1,
-    "maxValue": 35
+    "maxValue": 41
   },
   "techniques": [
     {
@@ -138,14 +138,18 @@
     },
     {
       "techniqueID": "T1190",
-      "score": 35,
+      "score": 41,
       "enabled": true,
       "showSubtechniques": false,
-      "comment": "35 rule file(s): CVE-2026-102895, CVE-2026-116779, CVE-2026-118066, CVE-2026-119077, CVE-2026-123957, CVE-2026-123958, CVE-2026-123966, CVE-2026-124010, CVE-2026-124014, CVE-2026-124057, CVE-2026-124058, CVE-2026-124580, CVE-2026-126768, CVE-2026-127275, CVE-2026-129171, CVE-2026-129250, CVE-2026-129351, CVE-2026-129353, CVE-2026-129448, CVE-2026-129449, CVE-2026-129450, CVE-2026-129451, CVE-2026-130071, CVE-2026-130072, CVE-2026-130583, CVE-2026-130856, CVE-2026-20320, CVE-2026-61680, CVE-2026-63079, CVE-2026-67449, CVE-2026-71495",
+      "comment": "41 rule file(s): CVE-2026-102895, CVE-2026-114516, CVE-2026-116779, CVE-2026-118066, CVE-2026-119077, CVE-2026-123957, CVE-2026-123958, CVE-2026-123966, CVE-2026-124010, CVE-2026-124014, CVE-2026-124057, CVE-2026-124058, CVE-2026-124580, CVE-2026-126768, CVE-2026-127275, CVE-2026-129171, CVE-2026-129250, CVE-2026-129351, CVE-2026-129353, CVE-2026-129448, CVE-2026-129449, CVE-2026-129450, CVE-2026-129451, CVE-2026-130071, CVE-2026-130072, CVE-2026-130583, CVE-2026-130856, CVE-2026-133680, CVE-2026-133968, CVE-2026-20320, CVE-2026-61680, CVE-2026-63079, CVE-2026-67449, CVE-2026-71495, CVE-2026-77367",
       "metadata": [
         {
           "name": "CVE-2026-102895",
           "value": "Sigma: rules/sigma/cve-2026-102895-gpustack-inference-backend-from-yaml.yml"
+        },
+        {
+          "name": "CVE-2026-114516",
+          "value": "Sigma: rules/sigma/cve-2026-114516-etherpad-static-backslash-traversal.yml"
         },
         {
           "name": "CVE-2026-118066",
@@ -168,8 +172,20 @@
           "value": "Sigma: rules/sigma/cve-2026-130856-53aihub-api-init-reinitialization.yml"
         },
         {
+          "name": "CVE-2026-133968",
+          "value": "Sigma: rules/sigma/cve-2026-133968-monailabel-datastore-image-traversal.yml"
+        },
+        {
+          "name": "CVE-2026-77367",
+          "value": "Sigma: rules/sigma/cve-2026-77367-daptin-api-sort-sqli.yml"
+        },
+        {
           "name": "CVE-2026-102895",
           "value": "Suricata: rules/suricata/cve-2026-102895-gpustack-real-ip-loopback-auth-bypass.rules"
+        },
+        {
+          "name": "CVE-2026-114516",
+          "value": "Suricata: rules/suricata/cve-2026-114516-etherpad-static-backslash-traversal.rules"
         },
         {
           "name": "CVE-2026-116779",
@@ -262,6 +278,14 @@
         {
           "name": "CVE-2026-130583",
           "value": "Suricata: rules/suricata/cve-2026-130583-rootways-authorizecim-applepay-ssrf.rules"
+        },
+        {
+          "name": "CVE-2026-133680",
+          "value": "Suricata: rules/suricata/cve-2026-133680-dlink-dcs935l-setconf-account-cmdi.rules"
+        },
+        {
+          "name": "CVE-2026-133968",
+          "value": "Suricata: rules/suricata/cve-2026-133968-monailabel-datastore-image-traversal.rules"
         },
         {
           "name": "CVE-2026-20320",

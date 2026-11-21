@@ -13,10 +13,20 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**38 rules** and **20 advisories**, newest first.
+**42 rules** and **26 advisories**, newest first.
 
 | Date | CVE or actor | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-21 | CVE-2026-76466 | Cisco Expressway clusters let an attacker run commands as root through the database service | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-76466.md) |
+| 2026-11-21 | CVE-2026-133968 | MONAI Label lets anyone write files anywhere through the datastore "image" name | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-133968.md) |
+| 2026-11-21 | CVE-2026-133680 | D-Link DCS-935L camera command injection through the Local Recording account and password | Suricata | CVSS 3.1: 9.9 Critical | experimental | [card](cards/cve-2026-133680.md) |
+| 2026-11-21 | CVE-2026-123890 | VMware vCenter authentication bypass in the Directory Service | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-123890.md) |
+| 2026-11-21 | CVE-2025-42884 | SAP NetWeaver Enterprise Portal JNDI injection | Advisory | CVSS 3.1: 6.5 Medium | advisory | [advisory](advisories/cve-2025-42884.md) |
+| 2026-11-20 | CVE-2026-77367 | Daptin SQL injection through the sort parameter, no login needed | Sigma | CVSS 3.1: 9.4 Critical | experimental | [card](cards/cve-2026-77367.md) |
+| 2026-11-20 | CVE-2026-77312 | Flyto2 Core file-writing modules can write outside the sandbox (incomplete earlier fix) | Advisory | CVSS 3.1: 10.0 Critical | advisory | [advisory](advisories/cve-2026-77312.md) |
+| 2026-11-20 | CVE-2026-133493 | D-Link DIR-600L router command injection in the UPnP event handler | Advisory | CVSS 3.1: 10.0 Critical | advisory | [advisory](advisories/cve-2026-133493.md) |
+| 2026-11-20 | CVE-2026-133323 | Mitel MiCollab command injection without login in the conferencing component | Advisory | CVSS 3.1: 10.0 Critical | advisory | [advisory](advisories/cve-2026-133323.md) |
+| 2026-11-20 | CVE-2026-114516 | Etherpad lets anyone read server files through encoded backslashes in /static/ | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-114516.md) |
 | 2026-11-18 | CVE-2026-61680 | WeGIA lets anyone create charge (billing) records without logging in | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-61680.md) |
 | 2026-11-18 | CVE-2026-130856 | 53AIHub lets anyone re-run the installer and take over admin accounts | Sigma | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-130856.md) |
 | 2026-11-18 | CVE-2026-130583 | Rootways Authorize.net CIM Pro (Magento 2) Apple Pay SSRF reads store secrets | Sigma, Suricata | CVSS 3.1: 9.3 Critical | experimental | [card](cards/cve-2026-130583.md) |
