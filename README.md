@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**42 rules** and **26 advisories**, newest first.
+**44 rules** and **29 advisories**, newest first.
 
 | Date | CVE or actor | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-22 | CVE-2026-134292 | SurrealDB embedded JavaScript can call built-in functions an admin has denied | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-134292.md) |
+| 2026-11-22 | CVE-2026-133993 | D-Link DIR-600L router stack overflow through an oversized UPnP "service" value | Sigma, Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-133993.md) |
+| 2026-11-22 | CVE-2026-133867 | @fastify/express skips regex-mounted middleware inside plugins with a parameterized prefix | Advisory | CVSS 3.1: 9.1 Critical | advisory | [advisory](advisories/cve-2026-133867.md) |
+| 2026-11-22 | CVE-2026-125294 | Nexter Blocks Pro (WordPress) registration lets a look-alike field name make a new user an Administrator | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-125294.md) |
+| 2026-11-22 | CVE-2026-124626 | @fastify/express skips path-scoped middleware, such as login checks, when a route segment is empty | Advisory | CVSS 3.1: 9.1 Critical | advisory | [advisory](advisories/cve-2026-124626.md) |
 | 2026-11-21 | CVE-2026-76466 | Cisco Expressway clusters let an attacker run commands as root through the database service | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-76466.md) |
 | 2026-11-21 | CVE-2026-133968 | MONAI Label lets anyone write files anywhere through the datastore "image" name | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-133968.md) |
 | 2026-11-21 | CVE-2026-133680 | D-Link DCS-935L camera command injection through the Local Recording account and password | Suricata | CVSS 3.1: 9.9 Critical | experimental | [card](cards/cve-2026-133680.md) |
