@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**44 rules** and **29 advisories**, newest first.
+**45 rules** and **33 advisories**, newest first.
 
 | Date | CVE or actor | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-23 | CVE-2026-134882 | TOTOLINK A7100RU router command injection through the OpenVPN export user name | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-134882.md) |
+| 2026-11-23 | CVE-2026-131782 | Simple Shopping Cart WordPress plugin PHP object injection, no login needed | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-131782.md) |
+| 2026-11-23 | CVE-2026-131754 | APCu Manager WordPress plugin PHP object injection, no login needed | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-131754.md) |
+| 2026-11-23 | CVE-2026-121613 | ifm O3D, O3DP and O3X industrial 3D cameras accept commands and firmware without a login | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-121613.md) |
+| 2026-11-23 | CVE-2026-115899 | Cribl Stream REST Collector runs attacker code hidden in pagination data | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-115899.md) |
 | 2026-11-22 | CVE-2026-134292 | SurrealDB embedded JavaScript can call built-in functions an admin has denied | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-134292.md) |
 | 2026-11-22 | CVE-2026-133993 | D-Link DIR-600L router stack overflow through an oversized UPnP "service" value | Sigma, Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-133993.md) |
 | 2026-11-22 | CVE-2026-133867 | @fastify/express skips regex-mounted middleware inside plugins with a parameterized prefix | Advisory | CVSS 3.1: 9.1 Critical | advisory | [advisory](advisories/cve-2026-133867.md) |
