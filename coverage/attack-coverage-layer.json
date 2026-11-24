@@ -13,7 +13,7 @@
       "#1f4e79"
     ],
     "minValue": 1,
-    "maxValue": 45
+    "maxValue": 48
   },
   "techniques": [
     {
@@ -26,6 +26,19 @@
         {
           "name": "INC Ransom",
           "value": "Sigma: rules/sigma/actor-incransom-winupd-service.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1053.003",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": true,
+      "comment": "1 rule file(s): CVE-2026-133469",
+      "metadata": [
+        {
+          "name": "CVE-2026-133469",
+          "value": "Sigma: rules/sigma/cve-2026-133469-xen-orchestra-ustar-persistence-files.yml"
         }
       ]
     },
@@ -69,6 +82,19 @@
         {
           "name": "CVE-2026-123039",
           "value": "Sigma: rules/sigma/cve-2026-123039-checkpoint-dynamiccli-unwrapped-command.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1071.001",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": true,
+      "comment": "1 rule file(s): CVE-2026-135202",
+      "metadata": [
+        {
+          "name": "CVE-2026-135202",
+          "value": "Suricata: rules/suricata/cve-2026-135202-wpconnect-airwp-online-c2.rules"
         }
       ]
     },
@@ -138,10 +164,10 @@
     },
     {
       "techniqueID": "T1190",
-      "score": 45,
+      "score": 48,
       "enabled": true,
       "showSubtechniques": false,
-      "comment": "45 rule file(s): CVE-2026-102895, CVE-2026-114516, CVE-2026-116779, CVE-2026-118066, CVE-2026-119077, CVE-2026-123957, CVE-2026-123958, CVE-2026-123966, CVE-2026-124010, CVE-2026-124014, CVE-2026-124057, CVE-2026-124058, CVE-2026-124580, CVE-2026-125294, CVE-2026-126768, CVE-2026-127275, CVE-2026-129171, CVE-2026-129250, CVE-2026-129351, CVE-2026-129353, CVE-2026-129448, CVE-2026-129449, CVE-2026-129450, CVE-2026-129451, CVE-2026-130071, CVE-2026-130072, CVE-2026-130583, CVE-2026-130856, CVE-2026-133680, CVE-2026-133968, CVE-2026-133993, CVE-2026-134882, CVE-2026-20320, CVE-2026-61680, CVE-2026-63079, CVE-2026-67449, CVE-2026-71495, CVE-2026-77367",
+      "comment": "48 rule file(s): CVE-2026-102895, CVE-2026-114516, CVE-2026-116779, CVE-2026-118066, CVE-2026-119077, CVE-2026-123957, CVE-2026-123958, CVE-2026-123966, CVE-2026-124010, CVE-2026-124014, CVE-2026-124057, CVE-2026-124058, CVE-2026-124580, CVE-2026-125294, CVE-2026-126768, CVE-2026-127275, CVE-2026-129171, CVE-2026-129250, CVE-2026-129351, CVE-2026-129353, CVE-2026-129448, CVE-2026-129449, CVE-2026-129450, CVE-2026-129451, CVE-2026-130071, CVE-2026-130072, CVE-2026-130583, CVE-2026-130856, CVE-2026-133469, CVE-2026-133680, CVE-2026-133968, CVE-2026-133993, CVE-2026-134882, CVE-2026-135429, CVE-2026-20320, CVE-2026-61680, CVE-2026-63079, CVE-2026-67449, CVE-2026-71495, CVE-2026-77367",
       "metadata": [
         {
           "name": "CVE-2026-102895",
@@ -178,6 +204,10 @@
         {
           "name": "CVE-2026-133993",
           "value": "Sigma: rules/sigma/cve-2026-133993-dlink-dir600l-gena-service-overflow.yml"
+        },
+        {
+          "name": "CVE-2026-135429",
+          "value": "Sigma: rules/sigma/cve-2026-135429-tabbycat-unauth-tournament-write.yml"
         },
         {
           "name": "CVE-2026-77367",
@@ -288,6 +318,10 @@
           "value": "Suricata: rules/suricata/cve-2026-130583-rootways-authorizecim-applepay-ssrf.rules"
         },
         {
+          "name": "CVE-2026-133469",
+          "value": "Suricata: rules/suricata/cve-2026-133469-xen-orchestra-json-cookie-token-bypass.rules"
+        },
+        {
           "name": "CVE-2026-133680",
           "value": "Suricata: rules/suricata/cve-2026-133680-dlink-dcs935l-setconf-account-cmdi.rules"
         },
@@ -302,6 +336,10 @@
         {
           "name": "CVE-2026-134882",
           "value": "Suricata: rules/suricata/cve-2026-134882-totolink-a7100ru-exportovpn-username-cmdi.rules"
+        },
+        {
+          "name": "CVE-2026-135429",
+          "value": "Suricata: rules/suricata/cve-2026-135429-tabbycat-unauth-tournament-write.rules"
         },
         {
           "name": "CVE-2026-20320",
@@ -326,6 +364,32 @@
       ]
     },
     {
+      "techniqueID": "T1195.002",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": true,
+      "comment": "1 rule file(s): CVE-2026-135202",
+      "metadata": [
+        {
+          "name": "CVE-2026-135202",
+          "value": "Sigma: rules/sigma/cve-2026-135202-wpconnect-airwp-online-backdoor-file.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1485",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": false,
+      "comment": "1 rule file(s): CVE-2026-135429",
+      "metadata": [
+        {
+          "name": "CVE-2026-135429",
+          "value": "Sigma: rules/sigma/cve-2026-135429-tabbycat-unauth-tournament-write.yml"
+        }
+      ]
+    },
+    {
       "techniqueID": "T1486",
       "score": 1,
       "enabled": true,
@@ -335,6 +399,19 @@
         {
           "name": "INC Ransom",
           "value": "Sigma: rules/sigma/actor-incransom-ransom-note.yml"
+        }
+      ]
+    },
+    {
+      "techniqueID": "T1505.003",
+      "score": 1,
+      "enabled": true,
+      "showSubtechniques": true,
+      "comment": "1 rule file(s): CVE-2026-135202",
+      "metadata": [
+        {
+          "name": "CVE-2026-135202",
+          "value": "Sigma: rules/sigma/cve-2026-135202-wpconnect-airwp-online-backdoor-file.yml"
         }
       ]
     },

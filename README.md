@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**45 rules** and **33 advisories**, newest first.
+**48 rules** and **35 advisories**, newest first.
 
 | Date | CVE or actor | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-24 | CVE-2026-59415 | Spring AI TypesenseVectorStore document-ID injection lets callers delete other documents | Advisory | CVSS 3.1: 10.0 Critical | advisory | [advisory](advisories/cve-2026-59415.md) |
+| 2026-11-24 | CVE-2026-135429 | Tabbycat lets anonymous users create, change and delete tournaments | Sigma, Suricata | CVSS 3.1: 9.1 Critical | experimental | [card](cards/cve-2026-135429.md) |
+| 2026-11-24 | CVE-2026-135202 | backdoor (airwp-online.php) shipped in six WP connect WordPress plugins | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-135202.md) |
+| 2026-11-24 | CVE-2026-134624 | N-able Mail Assure (SpamExperts) server-side request forgery in the LDAP sync connection check | Advisory | CVSS 3.1: not yet scored | advisory | [advisory](advisories/cve-2026-134624.md) |
+| 2026-11-24 | CVE-2026-133469 | Xen Orchestra login bypass with an empty-object auth cookie | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-133469.md) |
 | 2026-11-23 | CVE-2026-134882 | TOTOLINK A7100RU router command injection through the OpenVPN export user name | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-134882.md) |
 | 2026-11-23 | CVE-2026-131782 | Simple Shopping Cart WordPress plugin PHP object injection, no login needed | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-131782.md) |
 | 2026-11-23 | CVE-2026-131754 | APCu Manager WordPress plugin PHP object injection, no login needed | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-131754.md) |
