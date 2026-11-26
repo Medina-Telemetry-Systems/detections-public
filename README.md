@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**53 rules** and **35 advisories**, newest first.
+**54 rules** and **39 advisories**, newest first.
 
 | Date | CVE or actor | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-26 | CVE-2026-133303 | Mitel MiCollab XML injection in the conferencing component leads to command execution | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-133303.md) |
+| 2026-11-26 | CVE-2026-133275 | Mitel MiCollab file upload without login, used to plant a web shell under /pictures/ | Sigma | CVSS 3.1: 5.3 Medium | experimental | [card](cards/cve-2026-133275.md) |
+| 2026-11-26 | CVE-2026-103406 | Juniper Session Smart Conductor runs commands as root from a crafted Salt minion ID | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-103406.md) |
+| 2026-11-26 | CVE-2023-25915 | Danfoss AK-SM 800A refrigeration controller runs attacker commands | Advisory | CVSS 3.1: 8.8 High | advisory | [advisory](advisories/cve-2023-25915.md) |
+| 2026-11-26 | CVE-2023-25914 | Danfoss AK-SM 800A refrigeration controller lets users read system files through its XML interface | Advisory | CVSS 3.1: 8.8 High | advisory | [advisory](advisories/cve-2023-25914.md) |
 | 2026-11-25 | CVE-2026-136553 | Tenda RX3 router quick setup changes the admin password without checking the old one | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-136553.md) |
 | 2026-11-25 | CVE-2026-136549 | Tenda RX3 router command injection through the remote-management "remoteIp" | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-136549.md) |
 | 2026-11-25 | CVE-2026-132224 | Optimizely Web Experimentation signup flaw used to inject JavaScript into customer sites | Sigma, YARA | CVSS 3.1: 8.7 High | experimental | [card](cards/cve-2026-132224.md) |
