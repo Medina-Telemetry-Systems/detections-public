@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**54 rules** and **42 advisories**, newest first.
+**58 rules** and **43 advisories**, newest first.
 
 | Date | CVE or actor | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-27 | CVE-2026-137721 | Mitel OpenScape 4000 and 4000 Manager command injection without login | Advisory | CVSS 3.1: 10.0 Critical | advisory | [advisory](advisories/cve-2026-137721.md) |
+| 2026-11-27 | CVE-2026-137481 | Traefik skips login middleware for paths containing "/..;x/" | Sigma, Suricata | CVSS 3.1: 9.3 Critical | experimental | [card](cards/cve-2026-137481.md) |
+| 2026-11-27 | CVE-2026-126984 | Pulp pulp_python package cache downloads any URL a client names (SSRF) | Sigma | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-126984.md) |
+| 2026-11-27 | CVE-2026-106125 | Sneeit Framework lets anyone run PHP and WordPress functions through a menu AJAX call | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-106125.md) |
+| 2026-11-27 | CVE-2026-104998 | Product Input Fields for WooCommerce lets anyone upload a web shell disguised as an image | Sigma, Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-104998.md) |
 | 2026-11-26 | CVE-2026-133324 | Mitel MiCollab authentication bypass in the conferencing component | Advisory | CVSS 3.1: 5.3 Medium | advisory | [advisory](advisories/cve-2026-133324.md) |
 | 2026-11-26 | CVE-2026-133311 | Mitel MiCollab conferencing component exposes information to anyone with an identifier | Advisory | CVSS 3.1: 5.9 Medium | advisory | [advisory](advisories/cve-2026-133311.md) |
 | 2026-11-26 | CVE-2026-133303 | Mitel MiCollab XML injection in the conferencing component leads to command execution | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-133303.md) |

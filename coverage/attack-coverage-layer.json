@@ -13,7 +13,7 @@
       "#1f4e79"
     ],
     "minValue": 1,
-    "maxValue": 53
+    "maxValue": 60
   },
   "techniques": [
     {
@@ -44,14 +44,18 @@
     },
     {
       "techniqueID": "T1059",
-      "score": 1,
+      "score": 2,
       "enabled": true,
       "showSubtechniques": false,
-      "comment": "1 rule file(s): CVE-2026-102895",
+      "comment": "2 rule file(s): CVE-2026-102895, CVE-2026-106125",
       "metadata": [
         {
           "name": "CVE-2026-102895",
           "value": "Sigma: rules/sigma/cve-2026-102895-gpustack-inference-backend-from-yaml.yml"
+        },
+        {
+          "name": "CVE-2026-106125",
+          "value": "Sigma: rules/sigma/cve-2026-106125-sneeit-mega-content-callback-rce.yml"
         }
       ]
     },
@@ -177,14 +181,22 @@
     },
     {
       "techniqueID": "T1190",
-      "score": 53,
+      "score": 60,
       "enabled": true,
       "showSubtechniques": false,
-      "comment": "53 rule file(s): CVE-2026-102895, CVE-2026-114516, CVE-2026-116779, CVE-2026-118066, CVE-2026-119077, CVE-2026-123957, CVE-2026-123958, CVE-2026-123966, CVE-2026-124010, CVE-2026-124014, CVE-2026-124057, CVE-2026-124058, CVE-2026-124580, CVE-2026-125294, CVE-2026-126768, CVE-2026-127275, CVE-2026-129171, CVE-2026-129250, CVE-2026-129351, CVE-2026-129353, CVE-2026-129448, CVE-2026-129449, CVE-2026-129450, CVE-2026-129451, CVE-2026-130071, CVE-2026-130072, CVE-2026-130583, CVE-2026-130856, CVE-2026-131914, CVE-2026-132165, CVE-2026-133275, CVE-2026-133469, CVE-2026-133680, CVE-2026-133968, CVE-2026-133993, CVE-2026-134882, CVE-2026-135429, CVE-2026-136549, CVE-2026-136553, CVE-2026-20320, CVE-2026-61680, CVE-2026-63079, CVE-2026-67449, CVE-2026-71495, CVE-2026-77367",
+      "comment": "60 rule file(s): CVE-2026-102895, CVE-2026-104998, CVE-2026-106125, CVE-2026-114516, CVE-2026-116779, CVE-2026-118066, CVE-2026-119077, CVE-2026-123957, CVE-2026-123958, CVE-2026-123966, CVE-2026-124010, CVE-2026-124014, CVE-2026-124057, CVE-2026-124058, CVE-2026-124580, CVE-2026-125294, CVE-2026-126768, CVE-2026-126984, CVE-2026-127275, CVE-2026-129171, CVE-2026-129250, CVE-2026-129351, CVE-2026-129353, CVE-2026-129448, CVE-2026-129449, CVE-2026-129450, CVE-2026-129451, CVE-2026-130071, CVE-2026-130072, CVE-2026-130583, CVE-2026-130856, CVE-2026-131914, CVE-2026-132165, CVE-2026-133275, CVE-2026-133469, CVE-2026-133680, CVE-2026-133968, CVE-2026-133993, CVE-2026-134882, CVE-2026-135429, CVE-2026-136549, CVE-2026-136553, CVE-2026-137481, CVE-2026-20320, CVE-2026-61680, CVE-2026-63079, CVE-2026-67449, CVE-2026-71495, CVE-2026-77367",
       "metadata": [
         {
           "name": "CVE-2026-102895",
           "value": "Sigma: rules/sigma/cve-2026-102895-gpustack-inference-backend-from-yaml.yml"
+        },
+        {
+          "name": "CVE-2026-104998",
+          "value": "Sigma: rules/sigma/cve-2026-104998-woocommerce-pif-temp-script-access.yml"
+        },
+        {
+          "name": "CVE-2026-106125",
+          "value": "Sigma: rules/sigma/cve-2026-106125-sneeit-mega-content-callback-rce.yml"
         },
         {
           "name": "CVE-2026-114516",
@@ -197,6 +209,14 @@
         {
           "name": "CVE-2026-124010",
           "value": "Sigma: rules/sigma/cve-2026-124010-xweb-evo-xwconsole-cgi-sh-param.yml"
+        },
+        {
+          "name": "CVE-2026-126984",
+          "value": "Sigma: rules/sigma/cve-2026-126984-pulp-python-redirect-ssrf-foreign-host.yml"
+        },
+        {
+          "name": "CVE-2026-126984",
+          "value": "Sigma: rules/sigma/cve-2026-126984-pulp-python-redirect-ssrf-internal.yml"
         },
         {
           "name": "CVE-2026-129171",
@@ -231,12 +251,20 @@
           "value": "Sigma: rules/sigma/cve-2026-135429-tabbycat-unauth-tournament-write.yml"
         },
         {
+          "name": "CVE-2026-137481",
+          "value": "Sigma: rules/sigma/cve-2026-137481-traefik-dot-segment-path-parameter.yml"
+        },
+        {
           "name": "CVE-2026-77367",
           "value": "Sigma: rules/sigma/cve-2026-77367-daptin-api-sort-sqli.yml"
         },
         {
           "name": "CVE-2026-102895",
           "value": "Suricata: rules/suricata/cve-2026-102895-gpustack-real-ip-loopback-auth-bypass.rules"
+        },
+        {
+          "name": "CVE-2026-106125",
+          "value": "Suricata: rules/suricata/cve-2026-106125-sneeit-mega-content-callback-rce.rules"
         },
         {
           "name": "CVE-2026-114516",
@@ -375,6 +403,10 @@
           "value": "Suricata: rules/suricata/cve-2026-136553-tenda-rx3-fast-setting-loginpwd-reset.rules"
         },
         {
+          "name": "CVE-2026-137481",
+          "value": "Suricata: rules/suricata/cve-2026-137481-traefik-dot-segment-path-parameter.rules"
+        },
+        {
           "name": "CVE-2026-20320",
           "value": "Suricata: rules/suricata/cve-2026-20320-cisco-broadworks-oci-p-xxe.rules"
         },
@@ -445,11 +477,15 @@
     },
     {
       "techniqueID": "T1505.003",
-      "score": 2,
+      "score": 4,
       "enabled": true,
       "showSubtechniques": true,
-      "comment": "2 rule file(s): CVE-2026-133275, CVE-2026-135202",
+      "comment": "4 rule file(s): CVE-2026-104998, CVE-2026-133275, CVE-2026-135202",
       "metadata": [
+        {
+          "name": "CVE-2026-104998",
+          "value": "Sigma: rules/sigma/cve-2026-104998-woocommerce-pif-temp-script-access.yml"
+        },
         {
           "name": "CVE-2026-133275",
           "value": "Sigma: rules/sigma/cve-2026-133275-micollab-pictures-webshell.yml"
@@ -457,6 +493,10 @@
         {
           "name": "CVE-2026-135202",
           "value": "Sigma: rules/sigma/cve-2026-135202-wpconnect-airwp-online-backdoor-file.yml"
+        },
+        {
+          "name": "CVE-2026-104998",
+          "value": "Suricata: rules/suricata/cve-2026-104998-woocommerce-pif-script-upload.rules"
         }
       ]
     },
