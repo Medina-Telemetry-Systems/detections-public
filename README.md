@@ -13,10 +13,15 @@ for a reliable rule, we publish an advisory instead of guessing.
 ## Index
 
 <!-- feed:start -->
-**58 rules** and **43 advisories**, newest first.
+**62 rules** and **44 advisories**, newest first.
 
 | Date | CVE or actor | Issue | Type | Severity | Status | Details |
 |:--|:--|:--|:--|:--|:--|:--|
+| 2026-11-28 | CVE-2026-138005 | TRENDnet TEW-751DR router runs commands from the UPnP "CALLBACK" header (no login) | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-138005.md) |
+| 2026-11-28 | CVE-2026-138004 | TRENDnet TEW-751DR and TEW-733GR routers run commands from the soap.cgi "service" value (no login) | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-138004.md) |
+| 2026-11-28 | CVE-2026-136716 | Drupal core installer still allows site takeover on sites in unusual install states | Advisory | CVSS 3.1: 9.8 Critical | advisory | [advisory](advisories/cve-2026-136716.md) |
+| 2026-11-28 | CVE-2026-129243 | GeoServer skips its service security when the "service" name has a prefix (such as x/WFS) | Sigma, Suricata | CVSS 3.1: not yet scored | experimental | [card](cards/cve-2026-129243.md) |
+| 2026-11-28 | CVE-2026-120705 | GeoServer lets anyone inject XML through the GetFeatureById "ID" value (file read and SSRF) | Sigma, Suricata | CVSS 3.1: 8.6 High | experimental | [card](cards/cve-2026-120705.md) |
 | 2026-11-27 | CVE-2026-137721 | Mitel OpenScape 4000 and 4000 Manager command injection without login | Advisory | CVSS 3.1: 10.0 Critical | advisory | [advisory](advisories/cve-2026-137721.md) |
 | 2026-11-27 | CVE-2026-137481 | Traefik skips login middleware for paths containing "/..;x/" | Sigma, Suricata | CVSS 3.1: 9.3 Critical | experimental | [card](cards/cve-2026-137481.md) |
 | 2026-11-27 | CVE-2026-126984 | Pulp pulp_python package cache downloads any URL a client names (SSRF) | Sigma | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-126984.md) |
@@ -33,7 +38,7 @@ for a reliable rule, we publish an advisory instead of guessing.
 | 2026-11-25 | CVE-2026-136553 | Tenda RX3 router quick setup changes the admin password without checking the old one | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-136553.md) |
 | 2026-11-25 | CVE-2026-136549 | Tenda RX3 router command injection through the remote-management "remoteIp" | Suricata | CVSS 3.1: 10.0 Critical | experimental | [card](cards/cve-2026-136549.md) |
 | 2026-11-25 | CVE-2026-132224 | Optimizely Web Experimentation signup flaw used to inject JavaScript into customer sites | Sigma, YARA | CVSS 3.1: 8.7 High | experimental | [card](cards/cve-2026-132224.md) |
-| 2026-11-25 | CVE-2026-132165 | Drupal core lets outsiders use the installer on a live site | Sigma | CVSS 3.1: not yet scored | experimental | [card](cards/cve-2026-132165.md) |
+| 2026-11-25 | CVE-2026-132165 | Drupal core lets outsiders use the installer on a live site | Sigma | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-132165.md) |
 | 2026-11-25 | CVE-2026-131914 | Idunno.AntiCsrf (legacy ASP.NET library) deserializes the form token before checking it | Suricata | CVSS 3.1: 9.8 Critical | experimental | [card](cards/cve-2026-131914.md) |
 | 2026-11-24 | CVE-2026-59415 | Spring AI TypesenseVectorStore document-ID injection lets callers delete other documents | Advisory | CVSS 3.1: 10.0 Critical | advisory | [advisory](advisories/cve-2026-59415.md) |
 | 2026-11-24 | CVE-2026-135429 | Tabbycat lets anonymous users create, change and delete tournaments | Sigma, Suricata | CVSS 3.1: 9.1 Critical | experimental | [card](cards/cve-2026-135429.md) |
